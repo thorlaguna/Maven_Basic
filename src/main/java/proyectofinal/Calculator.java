@@ -6,5 +6,16 @@ public class Calculator {
 		return n1 + n2;
 	}
 
+	public boolean isAnAdult(int age) {
+		if (age >= 18)
+			return true;
+		else
+			return false;
+	}
+
+	public void allowOnlyAdults(int age) {
+		if (age < 18)
+			throw new RuntimeException("Es menor de edad");
+	}
 
 }
